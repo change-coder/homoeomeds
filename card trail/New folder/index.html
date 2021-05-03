@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ThapaCart</title>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!-- left side div -->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                        <div class="card p-4">
+                            <h2 class="py-4 font-weight-bold">Select Address</h2>
+                            <hr>
+                            <div class="form-check">
+                                <input class=" align-items-center form-check-input" type="radio" name="exampleRadios"
+                                    id="exampleRadios1" value="option1">
+                                <div class="form-design mb-4" style="width: fit-content;">
+                                    <label class="form-check-label mb-4" for="exampleRadios1">
+                                        Address 1 <br>
+                                        Ramateerth nagar belgaum 590016
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="button" class="mb-4 form-group collapsed btn btn-secondary"
+                                data-toggle="collapse" data-target="#adds2" style="width: fit-content;">Add another
+                                address</button>
+
+                            <div id="adds2" class="collapse in">
+                                <textarea name="address_1" minlength="10" value="" placeholder="Enter Address"
+                                    class="form-control form-group form-design mb-4"></textarea>
+                                <select id="state" class="form-design form-control form-group mb-4">
+                                    <option>Select State</option>
+                                </select>
+                                <select id="state" class="form-design form-control form-group mb-4">
+                                    <option>Select City</option>
+                                </select>
+
+                                <input type="text" name="postcode" value="" placeholder="Enter Pin Code"
+                                    class="form-design form-control form-group mb-4 ">
+                            </div>
+                            <a href="Order-Summary.html"><button type="submit" class="btn btn-sm btn-info form-group"
+                                    style="width: fit-content;">
+                                    Checkout </button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
