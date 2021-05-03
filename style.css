@@ -196,7 +196,7 @@ proced to pay
 -------------------------------------
 End proceed to pay 
 ------------------------------------ */
-@media (max-width: 600px) {
+@media (max-width: 766px) {
   .cus-bill
   {
     flex-direction: column;
