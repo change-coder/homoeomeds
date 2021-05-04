@@ -2,15 +2,15 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
         integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title></title>
 </head>
 
@@ -22,22 +22,68 @@
                     <!-- left side div -->
                     <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
                         <div class="card p-4">
-                            <h2 class="py-4 font-weight-bold">Select Address</h2>
-                            <hr>
-                            <div class="form-check">
-                                <input class=" align-items-center form-check-input" type="radio" name="exampleRadios"
-                                    id="exampleRadios1" value="option1">
-                                <div class="form-design mb-4" style="width: fit-content;">
-                                    <label class="form-check-label mb-4" for="exampleRadios1">
-                                        Address 1 <br>
-                                        Ramateerth nagar belgaum 590016
-                                    </label>
+                            <h1 class="py-0">Select Address</h1>
+                            <hr />
+
+                            <div id="adds1" class="collapse out">
+                                <textarea name="address_1" minlength="10" value="" placeholder="Enter Address"
+                                    class="form-control form-group form-design mb-4"></textarea>
+                                <select id="state" class="form-design form-control form-group mb-4">
+                                    <option>Select State</option>
+                                </select>
+                                <select id="state" class="form-design form-control form-group mb-4">
+                                    <option>Select City</option>
+                                </select>
+
+                                <input type="text" name="postcode" value="" placeholder="Enter Pin Code"
+                                    class="form-design form-control form-group mb-4" />
+                                
+                                    <a class="submit-btn" href="check-out.html"><button type="submit"
+                                        class="btn btn-sm btn-info form-group my-3">
+                                        Save Changes
+                                    </button></a>
+                            </div>
+
+
+                            <div class="form-design my-3">
+                                <h4>Customer Name</h4>
+                                <p>
+                                    House no 1348 <br />
+                                    Mahatesh nager <br />
+                                    BELAGAVI, KARNATAKA 580012 <br />
+                                    India
+                                </p>
+                            </div>
+                            <a class="submit-btn" href="order-summary.html"><button type="submit"
+                                    class="btn btn-sm btn-info form-group my-3">
+                                    Deliver to this address
+                                </button></a>
+                            <div class="col-md-3 d-flex">
+                                <div class="col-6">
+                                    <button type="button" class="form-group collapsed btn-sm btn-secondary"
+                                        data-toggle="collapse" data-target="#adds1" style="width: fit-content">
+                                        <span>Edit</span>
+                                    </button>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="form-group btn-sm btn-secondary"
+                                        style="width: fit-content">
+                                        <span>Delete</span>
+                                    </button>
                                 </div>
                             </div>
-                            <button type="button" class="mb-4 form-group collapsed btn btn-secondary"
-                                data-toggle="collapse" data-target="#adds2" style="width: fit-content;">Add another
-                                address</button>
 
+                            <hr />
+
+                            
+
+                            <!-- add new Address  -->
+                            <button type="button" class="form-group collapsed btn-sm btn-secondary mb-5"
+                                data-toggle="collapse" data-target="#adds2" style="width: fit-content">
+                                <span>Add a new address</span>
+                            </button>
+
+                            <!-- hidden content -->
                             <div id="adds2" class="collapse in">
                                 <textarea name="address_1" minlength="10" value="" placeholder="Enter Address"
                                     class="form-control form-group form-design mb-4"></textarea>
@@ -49,15 +95,15 @@
                                 </select>
 
                                 <input type="text" name="postcode" value="" placeholder="Enter Pin Code"
-                                    class="form-design form-control form-group mb-4 ">
+                                    class="form-design form-control form-group mb-4" />
                             </div>
-                            <a href="order-summary.html"><button type="submit" class="btn btn-sm btn-info form-group"
-                                    style="width: fit-content;">
-                                    Checkout </button></a>
+                            <!-- End hidden content -->
+                            <!-- End add new Address -->
+
+                            
+
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

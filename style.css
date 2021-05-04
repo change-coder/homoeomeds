@@ -159,9 +159,7 @@ cart page css
   {
     margin-top: 13px;
   }
-  .card_main_body{
-   
-  }
+  
   .item_edit
   {
     margin-left: 150px;
@@ -173,6 +171,19 @@ cart page css
   .total_amount .amount, .total_amount .shipping{
     float: right;
   }
+  .main_cart{
+    transition: all 0.5s ease;
+  }
+  .submit-btn
+  {
+    display: block;
+    width: fit-content;
+  }
+  h1{
+    font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  }
 /* ------------------------------------
 End cart page css
 ------------------------------------   */
@@ -183,7 +194,7 @@ End cart page css
 proced to pay 
 ------------------------------------ */
 .form-design{
-  height: 52px;
+  height:fit-content;
   border: 1px solid transparent;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   border-radius: 30px;
